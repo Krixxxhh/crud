@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}home{% endblock %}
+
+{% block content %}
+    <h2>Emp details</h2>
+<table class="table table-bordered">
+    <tr>
+        <th>Name</th>
+        <td>{{e.name}}</td>
+    </tr>
+    <tr>
+        <th>Department</th>
+        <td>{{e.department}}</td>
+    </tr><tr>
+        <th>Email</th>
+        <td>{{e.email}}</td>
+    </tr><tr>
+        <th>Phone number</th>
+        <td>{{e.contact_number}}</td>
+    </tr><tr>
+        <th>Address</th>
+        <td>{{e.address}}</td>
+    </tr>
+    </tr><tr>
+        <th>Date of Birth</th>
+        <td>{{e.date_of_birth}}</td>
+    </tr>
+</table>
+{% endblock %}
